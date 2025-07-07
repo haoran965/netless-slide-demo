@@ -647,6 +647,9 @@ window.addEventListener("message", evt => {
             }
         }
     });
+
+    slide.setResource(taskId, prefix);
+    slide.renderSlide(1);
     
     slide.current.on(SLIDE_EVENTS.useraddLink, (taskId: string, pageIndex: number, shapeId: string) => {
         console.log("useraddLink", taskId, pageIndex, shapeId);
