@@ -587,7 +587,7 @@ window.addEventListener("message", evt => {
 
 ```javascript
 // 发起离线缓存
-// 缓存指定页码
+// 缓存指定页码  仅在 @netless/slide^1.4.21 版本开始支持
 window.postMessage({
     type: "@slide/_preload_slide_",
     taskId: "", // 转码任务的 taskId,
@@ -611,6 +611,17 @@ window.postMessage({
     taskId: "",
     prefix: "",
     sessionId: "all", 
+}, "*");
+
+
+// @netless/slide@1.4.4 到 @netless/slide@1.4.21 前版本的缓存方式
+// 仅支持缓存所有页
+window.postMessage({
+    type: "@slide/_preload_slide_",
+    taskId: "",
+    prefix: "",
+    // 不传 sessionId
+    // sessionId: "all",
 }, "*");
 
 // 监听缓存进度
