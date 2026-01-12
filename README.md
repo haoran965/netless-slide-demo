@@ -1,5 +1,7 @@
 # netless-slide demo
 
+[English](./README_EN.md) | 简体中文
+
 这个项目是 `@netless/slide` 库的前端示例, 需要已经完成文档转换并且获取了 `taskId` 和 `prefixUrl` 才能进一步使用 `@netless/slide` 在浏览器中展示 ppt。
 
 [在线演示](https://netless-io.github.io/netless-slide-demo/)
